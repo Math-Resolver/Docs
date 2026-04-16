@@ -54,7 +54,7 @@ O projeto contribui para democratizar o acesso ao aprendizado matemático, ofere
 
 #### Estrutura de Custos
 
-- Infraestrutura (servidores)
+- Infraestrutura (nuvem)
 - Desenvolvimento e manutenção
 
 ### Estrutura de Diretórios
@@ -63,18 +63,57 @@ O projeto contribui para democratizar o acesso ao aprendizado matemático, ofere
 .
 |-- Arquitetura/
 |   |-- Guia de arquitetura.md
-|   `-- Mathphoto.excalidraw
+|   `-- Killmath.excalidraw
 |-- Épicos/
-|   |-- Épico - 0 Autenticação/
-|   |   |-- US-cadastro.md
-|   |   |-- US-cadastro-alternativo.md
-|   |   |-- US-login.md
-|   |   `-- US-refresh-token.md
+|   |-- Épico - 0 Autenticação e Autorização/
+|   |   |-- Épico.md
+|   |   |-- Technical Story/
+|   |   |   |-- TS 0.1 - Endpoints de cadastro WebAuthn.md
+|   |   |   |-- TS 0.2 - Endpoints de login WebAuthn.md
+|   |   |   |-- TS 0.3 - Gestão de challenge.md
+|   |   |   |-- TS 0.4 - Persistência e segurança de usuário e tokens.md
+|   |   |   |-- TS 0.5 - Rotação de refresh token.md
+|   |   |   |-- TS 0.6 - Mapeamento de erros HTTP.md
+|   |   |   `-- TS 0.7 - Testes automatizados.md
+|   |   `-- User Story/
+|   |       |-- US 4.1 - Iniciar cadastro e receber challenge.md
+|   |       |-- US 4.2 - Finalizar cadastro com credencial biométrica.md
+|   |       |-- US 5.1 - Iniciar login e receber challenge.md
+|   |       |-- US 5.2 - Finalizar login e receber tokens de acesso.md
+|   |       `-- US 6.1 - Renovar access token.md
 |   |-- Épico - 1 Resolução de Equações/
-|   |   |-- História de Usuário 1.1 — equation-solver-api.md
-|   |   |-- História de Usuário 1.2 — Detecção e roteamento de tipo de equação.md
-|   |   `-- História de Usuário 1.3 — Persistência do resultado (usuário logado).md
-|   `-- Épico - 2 Histórico de Equações/
-|       `-- História de Usuário 2.1 — Buscar histórico do usuário autenticado.md
+|   |   |-- Épico.md
+|   |   |-- Technical Story/
+|   |   |   |-- TS 1.1 - API de resolução de equações.md
+|   |   |   |-- TS 1.2 - Detector de tipo de equação.md
+|   |   |   |-- TS 1.3 - Implementação dos solvers.md
+|   |   |   |-- TS 1.4 - Tratamento de cancelamento.md
+|   |   |   |-- TS 1.5 - Persistência em background.md
+|   |   |   |-- TS 1.6 - Idempotência da escrita.md
+|   |   |   `-- TS 1.7 - Testes.md
+|   |   `-- User Story/
+|   |       |-- US 1.1 - Resolver equação via API.md
+|   |       |-- US 1.2 - Detectar e rotear tipo de equação.md
+|   |       `-- US 1.3 - Persistir resultado para usuário autenticado.md
+|   |-- Épico - 2 Histórico de Equações/
+|   |   |-- Épico.md
+|   |   |-- Technical Story/
+|   |   |   |-- TS 2.1 - Endpoint protegido de histórico.md
+|   |   |   |-- TS 2.2 - Isolamento por usuário.md
+|   |   |   |-- TS 2.3 - Paginação e ordenação.md
+|   |   |   |-- TS 2.4 - Contrato e metadados de resposta.md
+|   |   |   |-- TS 2.5 - Cancelamento de consulta.md
+|   |   |   `-- TS 2.6 - Testes.md
+|   |   `-- User Story/
+|   |       `-- US 2.1 - Buscar histórico do usuário autenticado.md
+|   `-- Épico - Chat IA/
+|       |-- Épico.md
+|       |-- Technical Story/
+|       |   |-- TS 3.1 - Endpoint de histórico protegido.md
+|       |   |-- TS 3.2 - Paginação e ordenação.md
+|       |   |-- TS 3.3 - Segurança e cancelamento.md
+|       |   `-- TS 3.4 - Alinhamento de escopo do épico.md
+|       `-- User Story/
+|           `-- US 3.1 - Consultar histórico de equações resolvidas.md
 `-- README.md
 ```
