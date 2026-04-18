@@ -7,7 +7,7 @@ Integrantes:
 - Matheus Caldana Ferreira Bernardo Terzini — RA: 924106937
 - Domingos Lobito Capewa — RA: 924120184
 - Juliana Vieira Santos — RA: 924118221
-- Nome Completo — RA: XXXXXXX
+- Richard Ryan dos Santos Camargo — RA: 924100027
 - Nome Completo — RA: XXXXXXX
 - Nome Completo — RA: XXXXXXX
 - Nome Completo — RA: XXXXXXX
